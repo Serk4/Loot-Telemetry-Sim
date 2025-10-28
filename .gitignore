@@ -147,6 +147,12 @@ stat_sheets/
 *.jpeg
 *.gif
 
+# Generated charts and visualizations in outputs folder
+outputs/*.png
+outputs/*.jpg
+outputs/*.jpeg
+outputs/*.gif
+
 # VS Code settings (optional - remove if you want to share VS Code config)
 .vscode/
 

@@ -16,11 +16,22 @@ A Python-based game telemetry simulation system that generates, processes, and a
 
 ```
 loot-telemetry-sim/
+├── outputs/            # Generated charts and visualizations
+│   ├── .gitkeep       # Ensures directory is tracked in Git
+│   ├── duck_heatmap.png               # (generated)
+│   ├── item_distribution.png          # (generated)
+│   ├── local_vs_server_comparison.png # (generated)
+│   ├── loot_totals.png                # (generated)
+│   ├── performance_dashboard.png      # (generated)
+│   ├── rubber_duck_heatmap.png        # (generated)
+│   └── server_duck_heatmap.png        # (generated)
 ├── data_generator.py   # Standalone data generation and upload script
 ├── simulator.ipynb     # Jupyter notebook for data analysis & visualization
 ├── server.py          # Flask REST API server
 ├── db_handler.py      # Database operations and data management
 ├── test_server.py     # Test suite for server functionality
+├── check_db.py        # Comprehensive database content checker
+├── quick_check.py     # Quick database statistics utility
 ├── requirements.txt   # Python dependencies
 ├── .gitignore        # Git ignore rules
 └── README.md         # This file
@@ -123,11 +134,28 @@ python data_generator.py --server http://192.168.1.100:5000
 python data_generator.py --matches 500 --players 6
 ```
 
-#### Option 3: Server Testing
+#### Option 3: Server Testing & Database Utilities
+
+**Run API Tests:**
 
 ```bash
 python test_server.py
 ```
+
+**Check Database Contents:**
+
+```bash
+# Comprehensive database content checker
+python check_db.py
+
+# Quick summary of database statistics
+python quick_check.py
+```
+
+The database utilities help you monitor and debug your telemetry data:
+
+- **`check_db.py`**: Shows detailed database contents with sample entries, aggregate statistics, and recent records
+- **`quick_check.py`**: Provides a quick overview of total records, matches, players, and item counts
 
 ## 📊 What It Does
 
@@ -203,11 +231,20 @@ The Jupyter notebook creates comprehensive visualizations:
 
 ## 🖼️ Generated Visualizations
 
-The analysis system generates several high-quality charts:
+The analysis system generates several high-quality charts in the `outputs/` folder:
 
-- `item_distribution.png` - Bar chart showing item collection frequency with percentages
-- `rubber_duck_heatmap.png` - Heatmap revealing popular rubber duck locations
-- `performance_dashboard.png` - 4-panel dashboard with comprehensive metrics
+**Main Analysis Charts:**
+
+- `outputs/item_distribution.png` - Bar chart showing item collection frequency with percentages
+- `outputs/rubber_duck_heatmap.png` - Heatmap revealing popular rubber duck locations
+- `outputs/performance_dashboard.png` - 4-panel dashboard with comprehensive metrics
+
+**Additional Charts:**
+
+- `outputs/duck_heatmap.png` - Alternative duck location visualization
+- `outputs/loot_totals.png` - Overall loot collection summary
+- `outputs/local_vs_server_comparison.png` - Local vs server data comparison
+- `outputs/server_duck_heatmap.png` - Server-side duck heatmap analysis
 
 **Sample Dashboard Panels:**
 

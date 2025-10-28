@@ -1,0 +1,6 @@
+# This file ensures the outputs directory is tracked in Git
+# Generated PNG files will be saved here but ignored by Git
+# Directory structure:
+# - item_distribution.png
+# - rubber_duck_heatmap.png  
+# - performance_dashboard.png
