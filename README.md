@@ -1,4 +1,5 @@
 # 🎮 Loot Telemetry Simulator
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue) ![License](https://img.shields.io/badge/License-MIT-green)
 
 A Python-based game telemetry simulation system that generates, processes, and analyzes loot data from simulated gaming sessions. This project demonstrates how game telemetry systems work in practice, complete with data generation, API server, and visualization components.
 
@@ -18,23 +19,23 @@ A Python-based game telemetry simulation system that generates, processes, and a
 loot-telemetry-sim/
 ├── outputs/            # Generated charts and visualizations
 │   ├── .gitkeep       # Ensures directory is tracked in Git
-│   ├── duck_heatmap.png               # (generated)
-│   ├── item_distribution.png          # (generated)
-│   ├── local_vs_server_comparison.png # (generated)
-│   ├── loot_totals.png                # (generated)
-│   ├── performance_dashboard.png      # (generated)
-│   ├── rubber_duck_heatmap.png        # (generated)
-│   └── server_duck_heatmap.png        # (generated)
+│   ├── duck_heatmap.png               # (auto-generated; run the notebook to populate)
+│   ├── item_distribution.png          # (auto-generated; run the notebook to populate)
+│   ├── local_vs_server_comparison.png # (auto-generated; run the notebook to populate)
+│   ├── loot_totals.png                # (auto-generated; run the notebook to populate)
+│   ├── performance_dashboard.png      # (auto-generated; run the notebook to populate)
+│   ├── rubber_duck_heatmap.png        # (auto-generated; run the notebook to populate)
+│   └── server_duck_heatmap.png        # (auto-generated; run the notebook to populate)
 ├── data_generator.py   # Standalone data generation and upload script
 ├── simulator.ipynb     # Jupyter notebook for data analysis & visualization
-├── server.py          # Flask REST API server
-├── db_handler.py      # Database operations and data management
-├── test_server.py     # Test suite for server functionality
-├── check_db.py        # Comprehensive database content checker
-├── quick_check.py     # Quick database statistics utility
-├── requirements.txt   # Python dependencies
-├── .gitignore        # Git ignore rules
-└── README.md         # This file
+├── server.py           # Flask REST API server
+├── db_handler.py       # Database operations and data management
+├── test_server.py      # Test suite for server functionality
+├── check_db.py         # Comprehensive database content checker
+├── quick_check.py      # Quick database statistics utility
+├── requirements.txt    # Python dependencies
+├── .gitignore          # Git ignore rules
+└── README.md           # This file
 ```
 
 ## 🚀 Quick Start
@@ -49,7 +50,7 @@ loot-telemetry-sim/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/loot-telemetry-sim.git
+   git clone https://github.com/Serk4/Loot-Telemetry-Sim.git
    cd loot-telemetry-sim
    ```
 
